@@ -14,7 +14,7 @@ _main:
     sub sp, sp, #16
     str X3, [sp]
 
-    //Move stack pointer to the position of char '1' and print it
+    //Move the stack pointer to the position of char '1' and print it
     add sp, sp, #16
     mov X0, #1
     mov X1, sp
@@ -22,7 +22,7 @@ _main:
     mov X16, #4
     svc 0
 
-    //Move stack pointer to the position of char '2' and print it
+    //Move the stack pointer to the position of char '2' and print it
     sub sp, sp, #16
     mov X0, #1
     mov X1, sp
@@ -30,7 +30,7 @@ _main:
     mov X16, #4
     svc 0
 
-    //Move stack pointer to the position of char '3' and print it
+    //Move the stack pointer to the position of char '3' and print it
     add sp, sp, #32
     mov X0, #1
     mov X1, sp
